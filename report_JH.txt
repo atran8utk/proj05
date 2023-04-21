@@ -1,0 +1,23 @@
+Jordan Huff
+
+----------------------------------------------------------------------------
+                                Contributions:
+
+Jordan (Me) - writing of class constructors and helper functions
+            - collaborative coding of BFS and Edmond's Karp Implementation 
+            - bugtesting
+
+Austin      - collaborative coding of BFS and Edmond's Karp Implementation
+            - bugtesting
+
+----------------------------------------------------------------------------
+                            Time Complexity Report:
+
+The time complexity of worddice.cpp is O(V+E^2), with V being the number 
+of vertices (or nodes) and E being the number of edges. Because the main 
+source of time complexity is the traversal of the graphs - which were 
+created every time a new word was being analyzed and then deleted after 
+the analysis was complete - the complexity is at least O(V+E). However, 
+because the program transverses through the graph of nodes with an 
+Edmond's Karp implementation of BFS, which alone is O(E^2), the complexity 
+is then O(V+E^2).
